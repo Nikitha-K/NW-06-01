@@ -1,0 +1,62 @@
+
+<!--PROGRAM TO DEMONSTRATE THE FORM VALIDATION IN HTML WITHOUT USING ALERT BOX, USING JAVASCRIPT-->
+
+
+<html>
+	<head>
+		<script>
+		
+		function validate(){
+		
+		
+			
+		if(document.myForm.Email.value =="" && document.myForm.Name.value == "")
+		{
+			document.getElementById("email").innerHTML="Enter a valid email".fontcolor("red");
+			document.getElementById("name").innerHTML="Enter a valid name".fontcolor("red");
+			
+			document.myForm.Email.focus();
+			return false;
+		}
+		
+		if(document.myForm.Email.value !="" && document.myForm.Name.value == "")
+		{
+			document.getElementById("name").innerHTML="Enter a valid name".fontcolor("red");
+			document.getElementById("email").innerHTML="";
+			document.myForm.Name.focus();
+			return false;
+		}
+		
+		if(document.myForm.Name.value != "" && document.myForm.Email.value =="")
+		{
+			document.getElementById("email").innerHTML="Enter a valid email".fontcolor("red");
+			document.getElementById("name").innerHTML="";
+			document.myForm.Email.focus();
+			return false;
+		}
+		
+		return(true);
+		
+		
+		}
+		
+					
+		</script>
+	</head>
+	
+	<body>
+	
+		<form action = "" name = "myForm" onsubmit = "return(validate());">
+		
+		Enter your name <input type= "text" name ="Name" /><span id="name"></span><br>
+		
+		Enter your email <input type= "text" name ="Email" /><span id="email"></span><br>
+		<input type = "Submit">
+		
+	</form>
+	
+	
+	</body>
+	
+</html>
+		

@@ -1,0 +1,46 @@
+
+<!--PROGRAM TO DEMONSTRATE THE FORM VALIDATION IN HTML PAGE USING JAVASCRIPT-->
+
+
+<html>
+	<head>
+		<script>
+		
+		function validate(){
+		
+		if(document.myForm.Name.value == "")
+		{
+			alert("Please provide your name");
+			document.myForm.Name.focus();
+			return false;
+		}
+			
+		if(document.myForm.Email.value =="")
+		{
+			alert("Please provide your email ");
+			document.myForm.Email.focus();
+			return false;
+		}
+		return(true);
+		
+		
+		}
+		
+					
+		</script>
+	</head>
+	
+	<body>
+	
+		<form action = "" name = "myForm" onsubmit = "return(validate());">
+		Enter your name <input type= "text" name ="Name" /> <br>
+		Enter your email <input type= "text" name ="Email" /> <br>
+		<input type = "Submit">
+		
+	</form>
+	
+	
+	</body>
+	
+</html>
+		

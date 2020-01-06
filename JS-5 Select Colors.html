@@ -1,0 +1,75 @@
+<!--PROGRAM TO DEMONSTRATE THE ALERT BOX WITH COLORS IN HTML PAGE USING JAVASCRIPT-->
+
+
+<html>
+	<head>
+		<script>
+		
+			function primary(rgb){
+			if(rgb=="red")
+			{
+				document.getElementById("select").innerHTML = "<span style='color: #FF0000;'>You selected RED</span>";
+			}
+			
+			else if(rgb=="blue")
+			{
+				document.getElementById("select").innerHTML = "<span style='color: blue;'>You selected BLUE</span>";
+			}
+			
+			else if(rgb=="yellow")
+			{
+				document.getElementById("select").innerHTML = "<span style='color: yellow;'>You selected YELLOW</span>";
+			}
+			
+			else
+			alert("not valid");
+			}
+			
+			function secondary(rgb){
+			if(rgb=="violet")
+			{
+				document.getElementById("select2").innerHTML = "<span style='color: violet;'>You selected VIOLET</span>";
+			}
+			
+			else if(rgb=="orange")
+			{
+				document.getElementById("select2").innerHTML = "<span style='color: orange;'>You selected ORANGE</span>";
+			}
+			
+			else if(rgb=="green")
+			{
+				document.getElementById("select2").innerHTML = "<span style='color: green;'>You selected GREEN</span>";
+			}
+			
+			else
+			alert("not valid");
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+	<h1> A sample javascript code for selecting colours</h1>
+	
+	<!-- <span id= "select" > Select your colour</span> -->
+	<p id = "select"> Select your primary colour </p>
+	<input type = "button" value = "RED" onclick = "primary('red')"></button>
+	
+	
+	<input type = "button" value = "BLUE" onclick = "primary('blue')"></button>
+	<input type = "button" value = "YELLOW" onclick = "primary('yellow')"></button>
+	
+	<p id = "select2"> Select your secondary colour </p>
+	<input type = "button" value = "GREEN" onclick = "secondary('green')"></button>
+	
+	
+	<input type = "button" value = "VIOLET" onclick = "secondary('violet')"></button>
+	<input type = "button" value = "ORANGE" onclick = "secondary('orange')"></button>
+	
+	
+	</body>
+	
+</html>
+	
+
+

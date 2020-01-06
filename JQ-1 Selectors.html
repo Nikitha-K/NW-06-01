@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> JQUERY SELECTORS </title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("p").click(function(){
+				alert("This paragraph was clicked");
+				});
+			});
+				
+				$(document).ready(function(){
+					$("h1,h2").click(function(){
+					$(this).hide();
+					
+				});
+			});	
+				</script>
+				
+			</head>
+			<body>
+			<p>Click me!!!</p>
+			<h1>Click on this heading and see the magic, it will disappear</h1>
+			<h2>Bye Bye! I will also disappear </h2>
+			<p>I will stay here, don't click me</p>
+			</body>
+			
+</html>
+			

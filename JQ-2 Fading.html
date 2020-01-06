@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> JQUERY SELECTORS </title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#div1").fadeOut();
+					$("#div2").fadeOut(3000);
+					$("#div3").fadeOut("slow");
+					
+					});
+				});
+				
+				</script>
+			
+			</head>
+			<body>
+			<p>See the fadeOut() method example with different parameters!!!</p>
+			<button> Click here to see the fadeout boxes</button><br><br>
+			<div id = "div1" style = "width : 80px; height :60px; background-color : red;"></div><br> 
+			<div id = "div2" style = "width : 80px; height :60px; background-color : blue;"></div><br> 
+			<div id = "div3" style = "width : 80px; height :60px; background-color : violet;"></div><br> 
+			
+			</body>
+			
+</html>
